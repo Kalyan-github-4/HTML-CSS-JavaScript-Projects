@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #121212;
+    padding: 30px;
+    width: 25rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.scroll-div{
+    height: 500px;
+    width: 100%;
+    padding-right: 10px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #1e1e1e;
+}
+
+.scroll-div::-webkit-scrollbar{
+    width: 8px;
+}
+
+.scroll-div::-webkit-scrollbar-track{
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+.scroll-div::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #1e1e1e;
+}
+
+.scroll-object{
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-object:hover{
+    background-color: #292929;
+}
