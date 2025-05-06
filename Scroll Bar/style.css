@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    height: 100vh;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.content {
+    padding: 4rem 6%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.content section {
+    border-left: 5px solid #00bcd4;
+    background-color: #1e1e1e;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 188, 212, 0.3);
+}
+
+.content section h1 {
+    font-size: 1.8rem;
+    color: #00bcd4;
+    margin-bottom: 1rem;
+}
+
+.scroll-indicator {
+    height: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+.scroll-indicator .progress {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, #00bcd4, #2196f3);
+    transition: width 0.1s ease-out;
+    border-radius: 0 3px 3px 0;
+}
+
+body::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
