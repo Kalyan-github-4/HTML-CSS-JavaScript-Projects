@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: #fff;
+    
+}
+
+p{
+    font-size: 3rem;
+}
+
+.js{
+    color: yellow;
+}
+
+.typed-text{
+    color: #20c20e;
+}
+
+.cursor{
+    background-color: greenyellow;
+}
+
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: greenyellow;
+    margin-left: 5px;
+    animation: blink 0.9s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
