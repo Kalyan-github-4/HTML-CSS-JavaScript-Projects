@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     background: #000000;
+}
+
+.container{
+    display: flex;
+}
+
+.container .eye {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: block;
+    background-color: #fff;
+    border-radius: 100px;
+    margin: 0 20px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2), inset 0 0 25px #767574, inset 0 0 25px #767574;
+    transition: transform 0.1s linear;
+}
+
+.container .eye::before {
+    content: "";
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background: #000;
+    border: 5px solid rgb(9, 0, 132);
+    box-sizing: border-box;
+}
