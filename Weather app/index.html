@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to top, #a1c4fd, #c2e9fb);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .weather-app {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .search-box {
+      display: flex;
+      margin-bottom: 1.5rem;
+    }
+
+    .search-box input {
+      flex: 1;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 8px 0 0 8px;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 0.7rem 1rem;
+      background: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+
+    .current-weather {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .current-weather img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .temperature {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .condition {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .location {
+      font-size: 1rem;
+      color: #999;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+      gap: 1rem;
+    }
+
+    .detail-item {
+      flex: 1;
+      background: #f0f0f0;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .forecast {
+      margin-top: 2rem;
+    }
+
+    .forecast-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .forecast-cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      overflow-x: auto;
+    }
+
+    .forecast-card {
+      flex: 1;
+      background: #e3f2fd;
+      border-radius: 12px;
+      padding: 0.8rem;
+      text-align: center;
+      min-width: 70px;
+    }
+
+    .forecast-card img {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media (max-width: 500px) {
+      .details {
+        flex-direction: column;
+      }
+
+      .forecast-cards {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-app">
+    <div class="search-box">
+      <input type="text" placeholder="Enter city" />
+      <button>Search</button>
+    </div>
+
+    <div class="current-weather">
+      <img src="https://openweathermap.org/img/wn/01d.png" alt="Weather Icon" />
+      <div class="temperature">22°C</div>
+      <div class="condition">Sunny</div>
+      <div class="location">New York, USA</div>
+    </div>
+
+    <div class="details">
+      <div class="detail-item">
+        <div>Humidity</div>
+        <strong>60%</strong>
+      </div>
+      <div class="detail-item">
+        <div>Wind</div>
+        <strong>15 km/h</strong>
+      </div>
+      <div class="detail-item">
+        <div>Pressure</div>
+        <strong>1013 hPa</strong>
+      </div>
+    </div>
+
+    <div class="forecast">
+      <div class="forecast-title">5-Day Forecast</div>
+      <div class="forecast-cards">
+        <div class="forecast-card">
+          <div>Mon</div>
+          <img src="https://openweathermap.org/img/wn/02d.png" alt="" />
+          <div>20°C</div>
+        </div>
+        <div class="forecast-card">
+          <div>Tue</div>
+          <img src="https://openweathermap.org/img/wn/03d.png" alt="" />
+          <div>22°C</div>
+        </div>
+        <div class="forecast-card">
+          <div>Wed</div>
+          <img src="https://openweathermap.org/img/wn/04d.png" alt="" />
+          <div>18°C</div>
+        </div>
+        <div class="forecast-card">
+          <div>Thu</div>
+          <img src="https://openweathermap.org/img/wn/10d.png" alt="" />
+          <div>24°C</div>
+        </div>
+        <div class="forecast-card">
+          <div>Fri</div>
+          <img src="https://openweathermap.org/img/wn/01d.png" alt="" />
+          <div>26°C</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+</body>
+</html>
