@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, #153677, #4e085f); */
+    background: linear-gradient(135deg, #283593, #42a5f5);
+    padding: 10px;
+    text-align: center;
+}
+
+.To-Do{
+    background: #fff;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.To-Do h2{
+    color: #002765;
+    /* display: flex;
+    align-items: center; */
+    margin-bottom: 20px;
+}
+
+.To-Do h2 i{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#input-box{
+    background: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+.add{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#list-container{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    border: 0.125px solid rgb(67, 67, 67);
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+
+}
+
+/* Hover effect for list item */
+li:hover {
+    background-color: #f4f4f4; /* Light grey background on hover */
+    transform: translateX(5px); /* Slight slide to the right */
+}
+
+/* Active effect for list item */
+li:active {
+    background-color: #e0e0e0; /* Darker grey on click */
+    transform: translateX(2px); /* Small slide on click */
+}
+
+/* Focus effect for list item when clicked (or keyboard navigation) */
+li:focus-within {
+    outline: 2px solid #ff5945; /* Outline to indicate focus */
+    background-color: #f9f9f9; /* Subtle light background on focus */
+}
+
+#input-box:hover {
+    border-color: #ff5945; /* Border color change on hover */
+    box-shadow: 0 0 8px rgba(0, 128, 128, 0.3); /* Teal */
+
+}
+
+#input-box:focus {
+    border-color: #ff5945; /* Border turns red when focused */
+    box-shadow: 0 0 10px rgba(255, 89, 69, 0.5); /* Focused shadow */
+}
+
+.add:hover {
+    background-color: #e94b38; /* Darker shade of button on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Active effect for the button */
+.add:active {
+    background-color: #d13e2a; /* Even darker shade on click */
+    transform: scale(1); /* Reset the scale on click */
+}
